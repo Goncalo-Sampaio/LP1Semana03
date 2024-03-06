@@ -2,6 +2,9 @@
 
 namespace PowTwoUntil
 {
+    /// <summary>
+    /// Class that deals with showing powers of 2 to the user.
+    /// </summary>
     class Program
     {
         /// <summary>
