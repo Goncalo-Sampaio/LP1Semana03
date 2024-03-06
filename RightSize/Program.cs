@@ -6,7 +6,18 @@ namespace RightSize
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            foreach (string s in args)
+            {
+                if (s.Length > 3)
+                {
+                    if (s.Length > 6)
+                    {
+                        break;
+                    }
+
+                    Console.WriteLine(s);
+                }
+            }
         }
     }
 }
