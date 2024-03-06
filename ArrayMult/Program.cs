@@ -24,12 +24,13 @@ namespace ArrayMult
             //double for loop to go through the multidimensional matrixes
             for (int i = 0; i < matrixA.GetLength(0); i++){
                 float value = 0;
-                for ( int j = 0; j < matrixB.GetLength(1); j++){
+                for ( int j = 0; j < matrixA.GetLength(1); j++){
                     value += (matrixA[i, j] * matrixB[j]);
                 }
 
                 //assigning the value of the addition and multiplication
                 final[i] = value;
+                Console.WriteLine(final[i]);
             }
         }
     }
