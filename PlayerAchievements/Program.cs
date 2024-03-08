@@ -16,9 +16,9 @@ namespace PlayerAchievements
 
             //loop to ask each player whats their achievements
             for (int i = 0; i < n; i++){
-                PlayerAchievements achievements = 0x000;
+                PlayerAchievements achievements = 0b000;
 
-                Console.WriteLine($"Player {n}:");
+                Console.WriteLine($"Player {i + 1}:");
                 Console.Write("Defeated Optional Boss? (Enter y to confirm) ");
                 string achievement1 = Console.ReadLine();
                 if (achievement1 == "y"){
@@ -36,7 +36,24 @@ namespace PlayerAchievements
                 }
 
                 players[i] = achievements;
-            } 
+            }
+
+            //Setting an enum with all the achievements
+            PlayerAchievements completionist = 
+            PlayerAchievements.DefeatOptionalBoss | 
+            PlayerAchievements.FindHiddenLevel |
+            PlayerAchievements.FinishGame;
+
+            //Printing each players achievements and "Completionist!" if the 
+            //player has all of them
+            foreach(PlayerAchievements p in players){
+                if (p != 0){
+                    Console.WriteLine(p);
+                    if ((p & completionist) == completionist){
+                        Console.WriteLine("Completionist!");
+                    }
+                }
+            }
         }
     }
 }
