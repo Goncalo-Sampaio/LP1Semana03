@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamousQuotes", "FamousQuote
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPS", "RPS\RPS.csproj", "{282F8518-F5EC-4CDE-A557-C9FB9B87B2B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerAchievements", "PlayerAchievements\PlayerAchievements.csproj", "{562B49DB-4B4F-4B99-8A1D-CE53373B41A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,5 +56,9 @@ Global
 		{282F8518-F5EC-4CDE-A557-C9FB9B87B2B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{282F8518-F5EC-4CDE-A557-C9FB9B87B2B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{282F8518-F5EC-4CDE-A557-C9FB9B87B2B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{562B49DB-4B4F-4B99-8A1D-CE53373B41A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{562B49DB-4B4F-4B99-8A1D-CE53373B41A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{562B49DB-4B4F-4B99-8A1D-CE53373B41A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{562B49DB-4B4F-4B99-8A1D-CE53373B41A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
